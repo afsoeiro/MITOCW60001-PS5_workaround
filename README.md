@@ -5,7 +5,7 @@
 When I tried to solve this problem, I noticed the file ps5.py would not download the RSS feed items from google and yahoo news sites. This happened when I reached the filtering section, right before Problem 10 from PS5.
 
 
-I investigated to see why it was not working. Apparently, there was some problem with the feedparser.py file. The specifications from both google and yahoo may have changed somehow.
+I investigated to see why it was not working. Apparently, there was some problem with the `feedparser.py` file. The specifications from both google and yahoo may have changed somehow.
 
 
 I built this rudimentary feed parser to substitute the supplied parser and found the necessary changes to finish *[Problem Set 5](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/pages/assignments/)* from **[MIT OCW 6.00001 - Introduction To Computer Science And Programming In Python - Fall 2016](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/)**.
