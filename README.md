@@ -46,7 +46,10 @@ B. Change the function `process(url)` to:
         pubdate = translate_html(entry.pubdate)
 
         try:
-            pubdate = datetime.strptime(pubdate, "%a, %d %b %Y %H:%M:%S %Z")
+            try:
+                pubdate = datetime.strptime(pubdate, "%a, %d %b %Y %H:%M:%S %Z")
+            except:
+                pubdate = datetime.strptime(pubdate, "%Y-%m-%dT%H:%M:%SZ")
             pubdate.replace(tzinfo=pytz.timezone("GMT"))
         except ValueError:
             matches = datefinder.find_dates(pubdate)
